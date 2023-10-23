@@ -1,0 +1,516 @@
+:root {
+    --main-background-color: #FFFFFF;
+    --dark-background-color: #2E2F42;
+    --light-background-color: #F4F4FD;
+    --submain-text-color: #434455;
+    --accent-color: #4D5AE5;
+    --button-extra-color: #404BBF;
+    --background-filter-button: #F4F4FD;
+    --main-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --border-button-color: #E7E9FC;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: var(--main-font-family);
+    color: var(--submain-text-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+/* =========================== Header =========================== */
+
+header {
+    background-color: var(--main-background-color);
+}
+
+.header {
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+        ;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-background-color);
+    margin: 0 auto;
+}
+
+.navigation {
+    display:flex;
+    align-items: center;
+}
+
+.contacts-list { 
+    display: flex;
+    gap: 40px;
+}
+.list-menu {
+    display:flex;
+    gap: 40px;
+}
+
+.menu-item {
+    padding: 24px 0;
+}
+
+.list-item .link {
+    display: block;
+}
+
+/* ============================ Logo ============================ */
+.studio-logo {
+color: var(--accent-color);
+font-family: var(--secondary-font-family);
+font-size: 18px;
+font-weight: 800;
+line-height: 1.17;
+letter-spacing: 0.54px;
+text-transform: uppercase;
+
+display: flex;
+align-items: center;
+margin-right: 76px;
+margin-left: auto;
+}
+
+
+.studio {
+    color: var(--dark-background-color);
+        font-family: var(--secondary-font-family);
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.17;
+        letter-spacing: 0.54px;
+        text-transform: uppercase;
+}
+
+/* =============================== /Logo =========================== */
+
+
+.list-item {
+    color: var(--dark-background-color);
+        font-family: var(--main-font-family);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+            padding: 24px 0;
+    }
+
+.list-item:hover,
+.list-item:active,
+.list-item:focus {
+    color: var(--button-extra-color);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        cursor: pointer;
+}
+
+.contacts {
+    font-style:normal;
+}
+
+.contacts .list {
+    color: var(--submain-text-color);
+        font-family: var(--main-font-family);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        text-decoration: none;
+
+        display: flex;
+        gap: 40px;
+}
+
+.contacts .list:hover,
+.contacts .list:active,
+.contacts .list:focus {
+        color: var(--button-extra-color);
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.32px;
+}
+
+/* =========================== /Header =========================== */
+
+/* =========================== MAIN =========================== */
+
+
+/* =========================== Hero ========================== */
+
+.hero {
+    background-color: var(--dark-background-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.hero .hero-main-list {
+    background-color: var(--dark-background-color);
+    display: block;
+}
+
+.hero-title {
+    color: var(--main-background-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        max-width: 496px;
+        margin: 0 auto;
+    }
+
+
+
+.hero-button {
+        background-color: var(--accent-color);
+        color: var(--main-background-color);
+        text-align: center;
+            font-family: var(--main-font-family);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.64px;
+            cursor:pointer;
+
+            display: block;
+            margin-top: 48px;
+            margin-left:auto;
+            margin-bottom: auto;
+            margin-right:auto;
+            padding: 16px 32px;
+            min-width: 169px;
+            height:56px;
+            border:none;
+            border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+        background: var(--button-extra-color);
+        cursor: pointer;
+}
+
+/* ========================== /Hero ============================== */
+
+/* ========================= Feature ============================== */
+
+.feature {
+    padding-top: 120px;
+    padding-bottom:120px;
+}
+
+.feature-title {
+    color: var(--dark-background-color);
+        font-family: var(--main-font-family);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+        margin-bottom: 8px;
+}
+
+.feature-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+}
+
+.feature-item {
+        width: calc((100% - 24px*3) / 4);
+}
+
+.feature-text {
+color: var(--submain-text-color);
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+
+}
+
+
+/* ============================ /Feature ========================= */
+
+/* ============================ What we are doing ======================= */
+
+.activity {
+    padding-bottom: 120px;
+}
+.supertitle-activity {
+    color: var(--dark-background-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+}
+
+.supertitle-activity {
+        margin-bottom: 72px;
+}
+
+.activity-list {
+    display: flex;
+    gap:24px;
+}
+
+/* ============================ /What we are doing ======================= */
+
+/* ============================ Our Team ================================= */
+
+.team-section {
+    background-color: var(--light-background-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-card {
+    padding: 32px 0;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    max-width: 264px;
+
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.supertitle-team {
+    color: var(--dark-background-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.team-name {
+    color: var(--dark-background-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+        margin-bottom: 8px;
+}
+
+.team-description {
+    color: var(--submain-text-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        padding-bottom: 32px;
+}
+
+/* ========================== /Our Team ========================= */
+
+/* =========================== /MAIN =========================== */
+
+
+
+
+/* =========================== Footer =========================== */
+
+.footer {
+    background-color: var(--dark-background-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* ========================= Logo ============================ */
+
+.bottom-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+        color: var(--accent-color);
+        font-family: var(--secondary-font-family);
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.17;
+        letter-spacing: 0.54px;
+        text-transform: uppercase;
+}
+
+/* ========================== /Logo ============================ */
+
+.studio-bottom {
+    color: var(--light-background-color);
+}
+
+.slogan {
+    color: var(--light-background-color);
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    max-width: 264px;
+}
+
+/* =========================== /Footer =========================== */
+
+
+
+
+
+
+
+/* =========================== Portfolio ============================= */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ================== Buttons =========================*/
+.filter {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.filter-button {
+    background-color: var(--background-filter-button);
+    color: var(--accent-color);
+        border: 1px solid var(--border-button-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.64px;
+        padding: 12px 24px;
+        border-radius: 4px;
+}
+
+.filter-button:active,
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--button-extra-color);
+    color: var(--main-background-color);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+/* ============================= /Buttons =========================== */
+
+/* ============================= Images ============================= */
+.portfolio-imgs {
+    display: flex;
+    flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 24px;
+}
+
+.filter-item {
+    width: calc((100% - 48px) / 3); 
+}
+
+.filter-desc {
+    padding: 32px 16px;
+    max-width: 360px;
+    border: 1px solid var(--border-button-color);
+        border-top: none;
+}
+
+.subtitle {
+    color: var(--dark-background-color);
+        font-family: var(--main-font-family);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+
+        margin-top: 32px;
+        margin-bottom: 8px;
+}
+
+.pic-description {
+    color: var(--submain-text-color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+
+        padding-bottom: 32px;
+}
+
+/* ============================ /Images ============================== */
