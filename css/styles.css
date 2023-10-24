@@ -570,6 +570,11 @@ max-width: 208px;
     width: 40px;
     height: 40px;
 }
+
+.footer-cust-link {
+    height: 100%;
+}
+
 .social-media-title {
     color: var(--main-background-color);
         font-family: var(--main-font-family);
@@ -703,10 +708,6 @@ max-width: 208px;
     overflow: hidden;
 }
 
-.hidden-text {
-        padding: 40px, 32px;
-}
-
 .content-text {
     color: var(--light-background-color);
         font-family: var(--main-font-family);
@@ -716,7 +717,7 @@ max-width: 208px;
         line-height: 1.5;
         letter-spacing: 0.32px;
         text-align: left;
-        padding: 40px 32px 0;
+        padding: 40px 32px;
     width: 100%;
     height: 100%;
     background-color: var(--accent-color);
